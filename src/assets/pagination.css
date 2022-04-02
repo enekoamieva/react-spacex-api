@@ -1,0 +1,25 @@
+.home-pagination {
+    max-width: 550px;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.home-pagination li {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-pagination li:hover {
+    background-color: #333;
+    color: #fff;
+}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.header img {
+    width: 250px;
+    display: inline;
+}
+
+.wrap-detail {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 25px
+}
+
+.wrap {
+    width: 100%;
+    padding: 0 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.item-card {
+    flex-basis: calc(25% - 10px);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.item-card-wrap {
+    padding: 20px 10px;
+}
+
+.item-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.item-header span {
+    margin-right: 15px;
+}
+
+.item-header .calendar-icon {
+    display: inline;
+}
+
+.item-header span.success {
+    background-color: greenyellow;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.item-header span.error {
+    background-color: tomato;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.item-content {
+    margin-bottom: 20px;
+}
+
+.item-content .item-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.item-footer {
+    margin-bottom: 15px;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.launch-detail h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.launch-detail p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.pagination {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 960px) {
+    .item-card {
+        flex-basis: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 720px) {
+    .item-card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 560px) {
+    .item-card {
+        flex-basis: 100%;
+    }
+}
